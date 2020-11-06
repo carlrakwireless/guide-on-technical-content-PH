@@ -82,8 +82,11 @@ to add all files you’ve changed. This saves time on adding changed files.
 Before doing any commit, ensure that you are really updated with the PH-Review branch. Always remember that PH-Review branch is constantly changing. This is critical to have a clean pull request later.
 
     git pull origin PH-Review
+    
+If your local copy of PH-Review is updated, you can proceed to commit the changes on your review branch.
+If not, you need to merge the updated PH-Review to your review branch. If there's divergence, you need to rebase instead of merge.
 
-You are now ready to commit!
+At this point, are now ready to commit!
 
     git commit -m “this is quick summary of the changes made”.
 
@@ -92,6 +95,8 @@ Please put a meaningful comment that reflects the changes you've made.
 ### Push now your local branch to github repo of rakwireless
 
     git push origin <name-of-my-review-branch>
+
+Take note that when you perfomed git rebase, you might need a push force instead of a normal git push.
 
 ### You are ready now to do a pull request.
 
