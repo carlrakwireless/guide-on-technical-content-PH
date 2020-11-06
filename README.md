@@ -41,6 +41,8 @@ followed by
     git pull
     
 This will ensure that your are updated with PH-Review. This is very important to have a clean pull request later.
+Be mindful that your local copy of PH-Review should never be ahead of any commit from the origin/PH-Review. 
+There should be no diverging. Fast-forwarding might usually happen since origin/PH-Review is contantly changing.
 
 
 ### Create a new branch where you can work on your changes
